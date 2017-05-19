@@ -7,7 +7,7 @@ Hi, everyone! This is my very first post on Github. I would like to use this pla
 * understanding a machine learning model from different perspectives and its connections with other models
 * model asymptotic behaviors and empirical behaviors (with finite number of samples)
 * theorys and techniques from advanced mathematics
-* designing efficient optimization algorithms and understand their advatanges and limts
-* creative applications
+* designing efficient optimization algorithms and understanding their advatanges and limits
+* creative and fun applications
 
 ----
