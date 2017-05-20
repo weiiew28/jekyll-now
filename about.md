@@ -12,4 +12,4 @@ When studying mathematics, depth of thoughts and elegant proofs always attract m
 
 ### Contact me
 
-[wisewille@gmai.com](mailto:wisewillegmail.com)
+[wisewille@gmail.com](mailto:wisewille@gmail.com)
