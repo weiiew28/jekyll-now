@@ -15,7 +15,8 @@ I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathj
        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
        processEscapes: true
-    }
+    },
+    TeX: {Macros:{subscript:['_{#1}',1],superscript:['^{#1}',1]}}
   });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
@@ -35,7 +36,7 @@ Now let us give it a try!
 * Equations: $ \int\_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 $
 * cases: $$f(x)=\begin{cases} 0  &  x\leq 0  \\  x & x>0 \end{cases} $$
 * underbrace: $x_{t+1}=x_t-\gamma_t \underbrace{\nabla f(x_t)}_{\text{Gradient}}$
-* Label equations: $$ \begin{equation}  D_{KL}(p||q)=\int p(x) \log \frac{p(x)}{q(x)}dx \label{kl} \end{equation}$$
+* Label equations: $$ \begin{align}  D_{KL}(p||q)=\int p(x) \log \frac{p(x)}{q(x)}dx \end{align} $$
 * Table: $$ \begin{tabular}{|c|c|} \hline \\ 1 & 2 \\ \hline \\  3 & 4 \\ \hline \end{tabular} $$
 
 ---
