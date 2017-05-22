@@ -5,7 +5,23 @@ title: How to type equations in jekyll
 
 I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathjax_to_a_jekyll_github_pages_blog.html) gives me a very neat explanation on how you should modify you jekyll to display mathematical equations. It boils down to 2 steps:
 
-1.  create **\_includes/mathjax.html**: insert javascript into the html, and specify some configurations. According to [MathJax documents](http://docs.mathjax.org/en/latest/tex.html), the tex2jax preprocessor defines the LaTeX math delimiters, \\ \(...\\ \) for inline math, and \\ \[...\\ \] for displayed equations. It also supports a pair of double dollar sign for displayed equations. However, it does not support a pair of single dollar sign in order to avoid confusion with its other usages. To resolve this issue, you will need to enable that in your mathjax configuration (MathJax.Hub.Config) in the **\_includes/mathjax.html**. 
+1.  create **\_includes/mathjax.html**: insert javascript into the html, and specify some configurations. According to [MathJax documents](http://docs.mathjax.org/en/latest/tex.html), the tex2jax preprocessor defines the LaTeX math delimiters, \\ \(...\\ \) for inline math, and \\ \[...\\ \] for displayed equations. It also supports a pair of double dollar sign for displayed equations. However, it does not support a pair of single dollar sign in order to avoid confusion with its other usages. To resolve this issue, you will need to enable that in your mathjax configuration (MathJax.Hub.Config) in the **\_includes/mathjax.html**. The code is the following:
+{% highlight html linenos %}
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+       processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+        type="text/javascript"
+>
+</script>
+{% endhighlight %}
 
  - Remark: The MathJax CDN hosted at cdn.mathjax.org will be shutting down on April 30, 2017, and it is thus recommended to change the link to the following "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML\_HTMLorMML".
 
