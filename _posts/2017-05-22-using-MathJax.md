@@ -35,7 +35,7 @@ Now let us give it a try!
 * Equations: $ \int\_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 $
 * cases: $$f(x)=\begin{cases} 0  &  x\leq 0  \\  x & x>0 \end{cases} $$
 * underbrace: $x\_{t+1}=x\_t-\gamma\_t \underbrace{\nabla f(x\_t)}\_{\text{Gradient}}$
-* Label equations: $$  D\_{KL}(p\|\|q)=\int\_{x} p(x) \log \frac{p(x)}{q(x)}dx \label{kl} $$
-* Table: $$ \begin{tabular}{\|c\|c\|} \hline \\ 1 & 2 \\ \hline \\  3 & 4 \\ \hline \end{tabular} $$
+* Label equations: $$ \begin{equation}  D_{KL}(p||q)=\int_{x} p(x) \log \frac{p(x)}{q(x)}dx \label{kl} \end{equation}$$
+* Table: $$ \begin{tabular}{|c|c|} \hline \\ 1 & 2 \\ \hline \\  3 & 4 \\ \hline \end{tabular} $$
 
 ---
