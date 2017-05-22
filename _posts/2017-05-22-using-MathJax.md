@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How to type equations in jekyll
-mathjax: true
 ---
 
 I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathjax_to_a_jekyll_github_pages_blog.html) gives me a very neat explanation on how you should modify you jekyll to display mathematical equations. It boils down to 2 steps:
