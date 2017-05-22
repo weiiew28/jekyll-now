@@ -7,6 +7,6 @@ I found this link gives a very neat explanation on how you should modify you jek
 Let us give it a try!
 
 * mathematical symbols: $$ \mathbb{R}^{n} $$, $$ \mathbb{E} $$
-* Greek letters: \\(\alpha \\), \\(\sigma \\), \\(Epsilon \\)
+* Greek letters: $$ \alpha $$, $$ \sigma $$, $$ \Epsilon $$
 
 ---
