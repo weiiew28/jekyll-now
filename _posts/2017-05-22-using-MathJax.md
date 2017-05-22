@@ -37,6 +37,6 @@ Let us give it a try!
 * mathematical symbols: $\mathbb{R}^{n}$, $\mathbb{E}$
 * Greek letters: $\alpha$, $\sigma$, $\gamma$, $\epsilon$
 * Equations: \\( \int_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 \\)
-* Label equations: $$ \sigma(x)=\frac{1}{1+\exp(-x)} \label{sigmoid} $$
+* Label equations: \begin{equation} \sigma(x)=\frac{1}{1+\exp(-x)} \label{sigmoid} \end{equation}
 
 ---
