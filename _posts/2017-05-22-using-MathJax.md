@@ -7,7 +7,7 @@ I found this link gives a very neat explanation on how you should modify you jek
 Let us give it a try!
 
 * mathematical symbols: $\mathbb{R}^{n}$, $\mathbb{E}$, \\(\mathbb{R}^{n}\\)
-* Greek letters: $ \alpha $, $ \sigma $, $ \Epsilon $, $$ \epsilon $$
-* Equations: \begin{equation} \int_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 \end{equation}
+* Greek letters: $ \alpha $, $ \sigma $, $ \Epsilon $, $ \epsilon $
+* Equations: $$ \int_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 $$
 
 ---
