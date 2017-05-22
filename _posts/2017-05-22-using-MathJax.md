@@ -12,7 +12,7 @@ I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathj
 
 Let us give it a try!
 
-* mathematical symbols: $\mathbb{R}^{n}$, $$\mathbb{E}$$
+* mathematical symbols: $$\mathbb{R}^{n}$$, $$\mathbb{E}$$
 * Greek letters: $$ \alpha $$, $$ \sigma $$, $$ \gamma $$, $$ \epsilon $$
 * Equations: $$ \int_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 $$
 
