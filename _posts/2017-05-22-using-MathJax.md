@@ -38,5 +38,4 @@ Now let us give it a try!
 * underbrace: $x_{t+1}=x_{t}-\gamma_{t} \underbrace{\nabla f(x_{t})}_{\text{Gradient}}$
 * Label equations: $$ D_{KL}(p\|\|q)=\int p(x) \log \frac{p(x)}{q(x)}dx $$
 * Table: $$ \begin{array}{\|c\|c\|} \hline  1  &  2 \\  \hline   3 & 4 \\  \hline \end{array} $$
-
 ---
