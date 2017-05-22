@@ -37,6 +37,6 @@ Now let us give it a try!
 * cases: $$f(x)=\begin{cases} 0  &  x\leq 0  \\  x & x>0 \end{cases} $$
 * underbrace: $x_{t+1}=x_{t}-\gamma_{t} \underbrace{\nabla f(x_{t})}_{\text{Gradient}}$
 * Label equations: $$ D_{KL}(p\|\|q)=\int p(x) \log \frac{p(x)}{q(x)}dx $$
-* Table: $$ \begin{tabular}{\|c\|c\|} \hline  1 & 2 \\ \hline  3 & 4 \\ \hline \end{tabular} $$
+* Table: $$ \begin{array}{\|c\|c\|} \hline  1  &  2 \\  \hline   3 & 4 \\  \hline \end{array} $$
 
 ---
