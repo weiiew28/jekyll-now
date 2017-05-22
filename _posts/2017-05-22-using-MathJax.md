@@ -10,7 +10,6 @@ However, it does not support \$...\$ to avoid confusion with its other usages. T
 
 2. include the above **\_includes/mathjax.html** in **\_layouts/defaults.html**. You can add **\{\% include mathjax.html \%\}** directly after the \<html\> tag.
 
-
 Let us give it a try!
 
 * mathematical symbols: $$\mathbb{R}^{n}$$, $$\mathbb{E}$$
