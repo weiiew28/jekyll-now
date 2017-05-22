@@ -26,21 +26,15 @@ I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathj
 
  - Remark: The MathJax CDN hosted at cdn.mathjax.org was down on April 30, 2017, and this is the reason we change the above link to the following "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML\_HTMLorMML".
 
-2. include the above **\_includes/mathjax.html** in **\_layouts/defaults.html**. 
-
-{% highlight html %}
-{% include mathjax.html %}
-{% endhighlight %}
-
-You can add the above code directly after the \<html\> tag in **\_layouts/defaults.html**.
+2. include the above **\_includes/mathjax.html** in **\_layouts/defaults.html**: add the code \{\% include mathjax.html \%\} directly after the \<html\> tag in **\_layouts/defaults.html**.
 
 Now let us give it a try!
 
 * mathematical symbols: $\mathbb{R}^{n}$, $\mathbb{E}$,$\mathbb{P}$
 * Greek letters: $\alpha$, $\sigma$, $\gamma$, $\epsilon$
-* Equations: \\( \int_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 \\)
-* Label equations: \begin{equation} D_{KL}(p||q)=\int_x p(x)\log \frac{p(x)}{q(x)} \label{kl} \end{equation}
-* cases: $f(x)=\begin{cases} 0  & x\leq 0 \\ x * x>0 \end{cases}$
-* underbrace: $x_{t+1}=x_t-\gamma_t \underbrace{\nabla f(x_t)}_{\text{Gradient}}$
+* Equations: $ \int\_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 $
+* cases: $f(x)=\begin{cases} 0  & x\leq 0 \\ x & x>0 \end{cases}$
+* underbrace: $x\_{t+1}=x\_t-\gamma\_t \underbrace{\nabla f(x\_t)}\_{\text{Gradient}}$
+* Label equations: \\[ D\_{KL}(p||q)=\int_x p(x)\log \frac{p(x)}{q(x)} \label{kl} \\]
 
 ---
