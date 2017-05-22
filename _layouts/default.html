@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  {% include mathjax.html %}
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     {% include meta.html %}
@@ -14,6 +13,7 @@
   </head>
 
   <body>
+    {% include meta.html %}
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
