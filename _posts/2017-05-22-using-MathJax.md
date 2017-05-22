@@ -26,7 +26,8 @@ I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathj
  - Remark: The MathJax CDN hosted at cdn.mathjax.org was down on April 30, 2017, and it is thus recommended to change the link to the following "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML\_HTMLorMML".
 
 2. include the above **\_includes/mathjax.html** in **\_layouts/defaults.html**. 
-{% highlight html linenos %}
+
+{% highlight html %}
 {% include mathjax.html %}
 {% endhighlight %}
 
