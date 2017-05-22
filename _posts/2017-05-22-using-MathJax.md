@@ -6,6 +6,7 @@ title: How to type equations in jekyll
 I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathjax_to_a_jekyll_github_pages_blog.html) gives me a very neat explanation on how you should modify you jekyll to display mathematical equations. It boils down to 2 steps:
 
 1.  create **\_includes/mathjax.html**: it inserts javascript into the html, and specifys some Latex configurations. According to [MathJax documents](http://docs.mathjax.org/en/latest/tex.html), the tex2jax preprocessor defines the LaTeX math delimiters: \\ \(...\\ \) for inline math, and \\ \[...\\ \] for displayed equations. It also supports a pair of double dollar sign for displayed equations. However, it does not support a pair of single dollar sign in order to avoid confusion with its other usages. To resolve this issue, you will need to enable the single pair dollar sign in your mathjax configuration in the **\_includes/mathjax.html**. The code is the following:
+
 {% highlight html linenos %}
 
 <script type="text/x-mathjax-config">
@@ -23,7 +24,7 @@ I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathj
 </script>
 {% endhighlight %}
 
- - Remark: The MathJax CDN hosted at cdn.mathjax.org was down on April 30, 2017, and it is thus recommended to change the link to the following "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML\_HTMLorMML".
+ - Remark: The MathJax CDN hosted at cdn.mathjax.org was down on April 30, 2017, and this is the reason we change the above link to the following "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML\_HTMLorMML".
 
 2. include the above **\_includes/mathjax.html** in **\_layouts/defaults.html**. 
 
@@ -33,11 +34,13 @@ I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathj
 
 You can add the above code directly after the \<html\> tag in **\_layouts/defaults.html**.
 
-Let us give it a try!
+Now let us give it a try!
 
-* mathematical symbols: $\mathbb{R}^{n}$, $\mathbb{E}$
+* mathematical symbols: $\mathbb{R}^{n}$, $\mathbb{E}$,$\mathbb{P}$
 * Greek letters: $\alpha$, $\sigma$, $\gamma$, $\epsilon$
 * Equations: \\( \int_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 \\)
-* Label equations: \begin{equation} \sigma(x)=\frac{1}{1+\exp(-x)} \label{sigmoid} \end{equation}
+* Label equations: \begin{equation} D_{KL}(p||q)=\int_x p(x)\log \frac{p(x)}{q(x)} \label{kl} \end{equation}
+* cases: $f(x)=\begin{cases} 0  & x\leq 0 \\ x * x>0 \end{cases}$
+* underbrace: $x_{t+1}=x_t-\gamma_t \underbrace{\nabla f(x_t)}_{\text{Gradient}}$
 
 ---
