@@ -12,7 +12,7 @@ However, it does not support \$...\$ to avoid confusion with its other usages. T
 
 Let us give it a try!
 
-* mathematical symbols: $$\mathbb{R}^{n}$$, $$\mathbb{E}$$
+* mathematical symbols: $\mathbb{R}^{n}$, $\mathbb{E}$
 * Greek letters: $$ \alpha $$, $$ \sigma $$, $$ \gamma $$, $$ \epsilon $$
 * Equations: $$ \int_{x} \frac{1}{\sqrt{2\pi}}\exp(-\frac{x^2}{2}) dx = 1 $$
 * Label equations: $$ \sigma(x)=\frac{1}{1+\exp(-x)} \label{sigmoid} $$
