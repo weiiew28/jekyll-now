@@ -29,6 +29,7 @@ I found this [post](http://sgeos.github.io/github/jekyll/2016/08/21/adding_mathj
 {% highlight html linenos %}
 {% include mathjax.html}
 {% endhighlight %}
+
 You can add the above code directly after the \<html\> tag.
 
 Let us give it a try!
