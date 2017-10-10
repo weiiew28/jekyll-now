@@ -5,9 +5,9 @@ title: Some elementary observations for learning distribution
 
 One of the measures to quantify the discrepancy between two continuous distributions $P$ and $Q$ is called the KL divergence, defined as following:
 \\[
-KL(P||Q)=\int_{x} P(x)\log \frac{P(x)}{Q(x)}
+KL(P||Q)=\int_{x} P(x)\log \frac{P(x)}{Q(x)} dx
 \\]
-If both distributions are discrete, then we will replace the integral with summation. Using Jensen's inequality, we get that $KL(P||Q)\geq 0$ and it is exactly $0$ if and only if $P$ agrees with $Q$ almost surely. However, KL divergence is not a metric, because it is not symmetric in general. The triangle-like inequality still holds, because $a \to a\log a$ and $a\to -\log a$ are both convex and we will have that
+If both distributions are discrete, then we will replace the integral with summation. Using Jensen's inequality, we have that $KL(P||Q)\geq 0$ and it is exactly $0$ if and only if $P$ agrees with $Q$ almost surely. However, KL divergence is not a metric, because it is not symmetric in general. The triangle-like inequality still holds, because $a \to a\log a$ and $a\to -\log a$ are both convex and we will have that
 \\[
 KL(\frac{1}{2}P_{1}+\frac{1}{2}P_{2}||Q) \leq \frac{1}{2} K(P_{1}||Q)+\frac{1}{2}K(P_{2}||Q) 
 \\]
@@ -16,7 +16,7 @@ KL(P||(\frac{1}{2}Q_{1}+\frac{1}{2}Q_{2})) \leq \frac{1}{2} K(P||Q_{1}) + \frac{
 \\]
 Now suppose we want to learn a distribution $P$, and we have a learning model $Q$, possibly parametrized by some parameters $w$. One of the things we could try is to minimize the KL divergence between $P$ and $Q$ because at optimal solution: $Q=P$ a.s when the learning model has sufficient expressiveness. This will be casted as the following optimization problem:
 \\[
-\min KL(P||Q(w)) \leftrightarrow  \max \int_{x} P(X)\log Q(w,x)
+\min KL(P||Q(w)) \leftrightarrow  \max \int_{x} P(X)\log Q(w,x) dx
 \\]
 When we have finitely many data points $x_{1},x_{2},\cdots, x_{n}$, the above integral can be approximated using a Monte Carlo sum: $\frac{1}{n}\sum_{i=1}^{n} \log Q(w,x)$. It is seen that this is exactly the maximum likelihood approach.  \\
 To study the limitation of MLE approach is thus equivalent to studying the limitation of minimizing $ KL(P||Q(w))$. One observation is that if $P(x)$ is very large and $Q(w,x)$ is very small, this will make the KL divergence very large. However, for other local modes for $P$, the KL divergence will not be penalized much as the peak mode if it is missed. My understanding is that MLE could be good at learning the large modes of the distribution, but not necessarily the multimodality of a distribution. Moreover, it is also very sensitive to the outlier if the data is scarce. \\
