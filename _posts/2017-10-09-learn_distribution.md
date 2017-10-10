@@ -40,11 +40,11 @@ and the probability that $D$ is correct when $x$ is from $Q$ is
 \\]
 Therefore the log probability that $D$ is right is 
 \\[
-\frac{1}{2}\mathbb{E}_{x ~ P}\log D(x)+ \frac{1}{2}\mathbb{E}_{x ~ Q}\log (1-D(x))
+\frac{1}{2} E_{x ~ P}\log D(x)+ \frac{1}{2} E_{x ~ Q}\log (1-D(x))
 \\]
 and the min max formulation is:
 \\[
-\min_{Q}\max_{D}\frac{1}{2}\mathbb{E}_{x ~ P}\log D(x)+ \frac{1}{2}\mathbb{E}_{x ~ Q}\log (1-D(x))
+\min_{Q}\max_{D}\frac{1}{2} E_{x ~ P}\log D(x)+ \frac{1}{2} E_{x ~ Q}\log (1-D(x))
 \\]
 Given $Q$, the optimal solution for $D$ is 
 \\[
