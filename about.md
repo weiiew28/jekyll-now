@@ -8,7 +8,7 @@ I am a PhD student from the Operations Research Department at Cornell University
 
 ### More Information
 
-When studying mathematics, depth of thoughts and elegant proofs always attract me. It motivates to understand every single object until I feel it natural and simple. I would like to quote a saying from Richard Feynman as my guiding principle: what I can not create, I don't understand. If I can not explain a technique or a theory in my intuitive language, then I don't understand it. If I can not ask a lot of questions and offer my critiques, then I don't think about it hard enough.
+When studying mathematics in my undergraduate years, I am always attracted by the depth of thoughts and elegant proofs underlying many mathematical objects. It motivates to understand every single concept until I feel it natural and simple. I would like to quote a saying from Richard Feynman as my guiding principle: what I can not create, I don't understand. Therefore, if I can not explain a technique or a theory in a simple/inuitive language, I don't necessarily understand it well enough. If I can't elucidate the relations between an algorithm/technique with other existing methods, then I don't necessarily understand it deep enough. 
 
 ### Contact me
 
