@@ -5,11 +5,11 @@ title: Learning a Distribuiton
 
 One of the measures to quantify the discrepancy between two continuous distributions $P$ and $Q$ is called the (Kullback Leibler) **KL** divergence, defined as following:
 
-$KL(P||Q)=\int_{x} P(x)\log \frac{P(x)}{Q(x)} dx$
+$$KL(P||Q)=\int_{x} P(x) \log \frac{P(x)}{Q(x)} dx $$
 
 If both distributions are discrete, then we will replace the integral with summation. Using Jensen's inequality, we can show that 
 
-$KL(P||Q)\geq 0$ 
+$$ KL(P||Q)\geq 0 $$ 
 
 and it is exactly $0$ if and only if $P$ agrees with $Q$ almost surely. However, KL divergence is not a metric, because it is not symmetric in general. However, The triangle-like inequality still holds, simply because the function: $a \to a \log a$ and the function: $a \to -\log a$ are both convex. It follows that:
 
