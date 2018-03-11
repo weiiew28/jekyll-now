@@ -5,7 +5,7 @@ title: Learning a Distribuiton
 
 One of the measures to quantify the discrepancy between two continuous distributions $P$ and $Q$ is called the (Kullback Leibler) **KL** divergence, defined as following:
 
-$KL(P||Q)=\int_{x} P(x)\log {P(x)}/{Q(x)} dx$
+$KL(P||Q)=\int_{x} P(x)\log \frac{P(x)}{Q(x)} dx$
 
 If both distributions are discrete, then we will replace the integral with summation. Using Jensen's inequality, we can show that 
 
@@ -21,7 +21,7 @@ and
   
  Now suppose we want to learn a distribution $P$, and we have a learning model $Q$, possibly parametrized by some parameters $w$. One of the things we could try is to minimize the KL divergence between $P$ and $Q$ because at optimal solution: $Q=P$ a.s when the learning model has sufficient expressiveness. This will be casted as the following optimization problem: 
  
- $\min_{\omega} KL(P||Q(w)) = \max_{\omega} \int_{x} P(X) \log Q(w,x) dx$   (1)
+$\min_{\omega} KL(P||Q(w)) = \max_{\omega} \int_{x} P(X) \log Q(w,x) dx$   (1)
  
  When we only have finitely many data points $x_{1},x_{2},\cdots, x_{n}$, the above integral can be approximated using a Monte Carlo sum: 
  
